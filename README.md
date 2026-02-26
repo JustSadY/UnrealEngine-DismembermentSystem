@@ -72,13 +72,5 @@ The underlying struct that holds data for each breakable bone. It contains prope
 
 ---
 
-## ⚙️ Technical Considerations
-
-This component utilizes `HideBoneByName` and `UnHideBoneByName` on the owner's Skeletal Mesh to create the dismemberment effect. It does **not** physically drop the amputated limbs into the world as rigid bodies; it simply hides them for maximum optimization in high-density crowd scenarios.
-
-> **Note on Modular Characters:** By default, it targets a single cached `USkeletalMeshComponent`. If you are using a Master Pose Component setup with multiple meshes (clothes, armors), additional logic will be required to synchronize the hidden bones across all attached sub-meshes.
-
----
-
 ## ⚖️ License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
